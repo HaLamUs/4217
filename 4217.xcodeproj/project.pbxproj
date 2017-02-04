@@ -12,6 +12,9 @@
 		EB21CAB01E45C09F00297256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB21CAAE1E45C09F00297256 /* LaunchScreen.storyboard */; };
 		EB21CAB81E45C27400297256 /* MonaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */; };
 		EB21CABA1E45CA3900297256 /* MonaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21CAB91E45CA3900297256 /* MonaCollectionViewCell.swift */; };
+		EB35F7D41E45E94C00051328 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EB35F7D31E45E94C00051328 /* README.md */; };
+		EB35F7D61E45EBB300051328 /* UIColor+4217.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB35F7D51E45EBB300051328 /* UIColor+4217.swift */; };
+		EB35F7D81E45F24900051328 /* UIView+4217.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB35F7D71E45F24900051328 /* UIView+4217.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EB21CAB11E45C09F00297256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonaCollectionViewController.swift; sourceTree = "<group>"; };
 		EB21CAB91E45CA3900297256 /* MonaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonaCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB35F7D31E45E94C00051328 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EB35F7D51E45EBB300051328 /* UIColor+4217.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+4217.swift"; sourceTree = "<group>"; };
+		EB35F7D71E45F24900051328 /* UIView+4217.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+4217.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		EB21CA991E45C09E00297256 = {
 			isa = PBXGroup;
 			children = (
+				EB35F7D31E45E94C00051328 /* README.md */,
 				EB21CAA41E45C09F00297256 /* 4217 */,
 				EB21CAA31E45C09F00297256 /* Products */,
 			);
@@ -54,14 +61,64 @@
 		EB21CAA41E45C09F00297256 /* 4217 */ = {
 			isa = PBXGroup;
 			children = (
-				EB21CAA51E45C09F00297256 /* AppDelegate.swift */,
-				EB21CAAC1E45C09F00297256 /* Assets.xcassets */,
-				EB21CAAE1E45C09F00297256 /* LaunchScreen.storyboard */,
-				EB21CAB11E45C09F00297256 /* Info.plist */,
-				EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */,
-				EB21CAB91E45CA3900297256 /* MonaCollectionViewCell.swift */,
+				EB35F7CE1E45E88E00051328 /* App */,
+				EB35F7CF1E45E89700051328 /* UI */,
+				EB35F7D01E45E8B900051328 /* Supporting Files */,
+				EB35F7D91E45F26200051328 /* Extendsions */,
 			);
 			path = 4217;
+			sourceTree = "<group>";
+		};
+		EB35F7CE1E45E88E00051328 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB21CAA51E45C09F00297256 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		EB35F7CF1E45E89700051328 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EB21CAAE1E45C09F00297256 /* LaunchScreen.storyboard */,
+				EB35F7D11E45E8DD00051328 /* View Controllers */,
+				EB35F7D21E45E8E600051328 /* Views */,
+				EB21CAAC1E45C09F00297256 /* Assets.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		EB35F7D01E45E8B900051328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB21CAB11E45C09F00297256 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB35F7D11E45E8DD00051328 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EB35F7D21E45E8E600051328 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB21CAB91E45CA3900297256 /* MonaCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EB35F7D91E45F26200051328 /* Extendsions */ = {
+			isa = PBXGroup;
+			children = (
+				EB35F7D51E45EBB300051328 /* UIColor+4217.swift */,
+				EB35F7D71E45F24900051328 /* UIView+4217.swift */,
+			);
+			name = Extendsions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +153,7 @@
 				TargetAttributes = {
 					EB21CAA11E45C09E00297256 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LR8XGHFLF8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB35F7D81E45F24900051328 /* UIView+4217.swift in Sources */,
 				EB21CAA61E45C09F00297256 /* AppDelegate.swift in Sources */,
+				EB35F7D61E45EBB300051328 /* UIColor+4217.swift in Sources */,
 				EB21CABA1E45CA3900297256 /* MonaCollectionViewCell.swift in Sources */,
+				EB35F7D41E45E94C00051328 /* README.md in Sources */,
 				EB21CAB81E45C27400297256 /* MonaCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LR8XGHFLF8;
 				INFOPLIST_FILE = 4217/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -266,7 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LR8XGHFLF8;
 				INFOPLIST_FILE = 4217/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -295,6 +356,7 @@
 				EB21CAB61E45C09F00297256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

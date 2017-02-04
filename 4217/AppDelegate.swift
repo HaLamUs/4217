@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: monaController)
         window?.rootViewController = navigationController
         
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().barTintColor = UIColor(colorLiteralRed: 56/255, green: 108/255, blue: 121/255, alpha: 1)
+        UINavigationBar.appearance().isTranslucent = false// keep this prevent true origin color if not it will brighter
+        UINavigationBar.appearance().barTintColor = UIColor(hexString:"#386C79")!
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         return true
