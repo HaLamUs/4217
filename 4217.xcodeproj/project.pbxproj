@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		EB21CAA61E45C09F00297256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21CAA51E45C09F00297256 /* AppDelegate.swift */; };
-		EB21CAA81E45C09F00297256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21CAA71E45C09F00297256 /* ViewController.swift */; };
-		EB21CAAB1E45C09F00297256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB21CAA91E45C09F00297256 /* Main.storyboard */; };
 		EB21CAAD1E45C09F00297256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB21CAAC1E45C09F00297256 /* Assets.xcassets */; };
 		EB21CAB01E45C09F00297256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB21CAAE1E45C09F00297256 /* LaunchScreen.storyboard */; };
+		EB21CAB81E45C27400297256 /* MonaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB21CAA21E45C09F00297256 /* 4217.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4217.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB21CAA51E45C09F00297256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB21CAA71E45C09F00297256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB21CAAA1E45C09F00297256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB21CAAC1E45C09F00297256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB21CAAF1E45C09F00297256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB21CAB11E45C09F00297256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonaCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				EB21CAA51E45C09F00297256 /* AppDelegate.swift */,
-				EB21CAA71E45C09F00297256 /* ViewController.swift */,
-				EB21CAA91E45C09F00297256 /* Main.storyboard */,
 				EB21CAAC1E45C09F00297256 /* Assets.xcassets */,
 				EB21CAAE1E45C09F00297256 /* LaunchScreen.storyboard */,
 				EB21CAB11E45C09F00297256 /* Info.plist */,
+				EB21CAB71E45C27400297256 /* MonaCollectionViewController.swift */,
 			);
 			path = 4217;
 			sourceTree = "<group>";
@@ -125,7 +122,6 @@
 			files = (
 				EB21CAB01E45C09F00297256 /* LaunchScreen.storyboard in Resources */,
 				EB21CAAD1E45C09F00297256 /* Assets.xcassets in Resources */,
-				EB21CAAB1E45C09F00297256 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +132,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB21CAA81E45C09F00297256 /* ViewController.swift in Sources */,
 				EB21CAA61E45C09F00297256 /* AppDelegate.swift in Sources */,
+				EB21CAB81E45C27400297256 /* MonaCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EB21CAA91E45C09F00297256 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB21CAAA1E45C09F00297256 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB21CAAE1E45C09F00297256 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,7 +248,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 4217/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mar.dev.-217";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 4217/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mar.dev.-217";
 				PRODUCT_NAME = "$(TARGET_NAME)";
