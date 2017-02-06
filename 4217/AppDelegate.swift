@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().isTranslucent = false// keep this prevent true origin color if not it will brighter
         UINavigationBar.appearance().barTintColor = UIColor(hexString:"#386C79")!
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
         return true
     }
