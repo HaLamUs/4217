@@ -11,6 +11,14 @@ import UIKit
 class MonaCollectionViewCell: UICollectionViewCell {
     
     //MARK: Properties
+    
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor(hexString:"#386C79")! :  UIColor(white: 0.95, alpha: 1)
+//            nameLabel.textColor = isHighlighted ? .white : UIColor(hexString:"#386C79")!
+        }
+    }
+    
     let nameLabel: UILabel = {
         $0.numberOfLines = 2
         //first line
@@ -19,7 +27,7 @@ class MonaCollectionViewCell: UICollectionViewCell {
         attributedText.append(NSMutableAttributedString(string: "\nLeonardo Da Vinci, Louvre", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16), NSForegroundColorAttributeName: UIColor.lightGray]))
         //line spacing
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 5
+        paragraphStyle.lineSpacing = 14
         attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSRange(location: 0, length: attributedText.string.characters.count))
         
         $0.attributedText = attributedText
@@ -73,12 +81,13 @@ class MonaCollectionViewCell: UICollectionViewCell {
         
         _ = nameLabel.anchor( left: cellImageView.rightAnchor, leftConstraint: 8, centerY: self.centerYAnchor)
         
-        _ = cellImageView.anchor(left: self.leftAnchor, leftConstraint: 10, widthConstraint: 44, heightConstraint: 44, centerY: self.centerYAnchor)
+        _ = cellImageView.anchor(self.topAnchor, left: self.leftAnchor, bottom: dividerLineView.topAnchor, right: nil, topConstraint: 10, leftConstraint: 10, bottomConstraint: -10, rightConstraint: 0, widthConstraint: 60, heightConstraint: 0, centerY: nil, centerX: nil, centerYConstraint: 0, centerXConsatrint: 0)
         
-        _ = detailButton.anchor(right: self.rightAnchor, rightConstraint: -8, widthConstraint: 30, heightConstraint: 30, centerY: self.centerYAnchor)
+        _ = detailButton.anchor(right: self.rightAnchor, rightConstraint: -8, widthConstraint: 44, heightConstraint: 44, centerY: self.centerYAnchor)
         
-        _ = addButton.anchor(right: detailButton.leftAnchor, rightConstraint: -8, widthConstraint: 30, heightConstraint: 30, centerY: self.centerYAnchor)
-        _ = dividerLineView.anchor(cellImageView.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, topConstraint: 8, leftConstraint: 8, rightConstraint: -8, heightConstraint: 1)
+        _ = addButton.anchor(right: detailButton.leftAnchor, rightConstraint: -8, widthConstraint: 44, heightConstraint: 44, centerY: self.centerYAnchor)
+
+        _ = dividerLineView.anchor(nil, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstraint: 0, leftConstraint: 10, bottomConstraint: 0, rightConstraint: -10, widthConstraint: 0, heightConstraint: 1, centerY: nil, centerX: nil, centerYConstraint: 0, centerXConsatrint: 0)
     }
     
 }
